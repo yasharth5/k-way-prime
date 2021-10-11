@@ -11,7 +11,7 @@ def is_prime(num):
 l = []
 n = int(input("enter the number for checking"))
 
-for i in range(2,int(sqrt(n)) + 2):
+for i in range(2,int(n/2) + 1):
     if n % i == 0 :
          check = is_prime(i)
          if check == False :
